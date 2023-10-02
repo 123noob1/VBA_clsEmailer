@@ -5,7 +5,7 @@ A simple manageable, maintainable, and updateable emailer class that can be used
 - Dim the class clsEmailer either on class/form level or procedure level.
 - Call the object's function <code>InitEmailContent</code> and set the parameters accordingly to generate the email.
 
-- 'InitEmailContent(SubjectContent , BodyContent , [AttachFile], [SendTo], [SendCC], [SendBCC], [BodyFormat], [DisplayMail], [SendOnBehalf], [FlagImportance])'
+```InitEmailContent(SubjectContent , BodyContent , [AttachFile], [SendTo], [SendCC], [SendBCC], [BodyFormat], [DisplayMail], [SendOnBehalf], [FlagImportance])```
 
 - <code>SubjectContent</code> - [str] Email Subject line (required)
 - <code>BodyContent</code> - [str] Email Body content (required)
@@ -21,7 +21,7 @@ A simple manageable, maintainable, and updateable emailer class that can be used
 -- <b>Example:</b>
 - Class/Form level
 
-'''
+```
 Option Explicit
 Private clsEmail as New clasEmailer
 
@@ -30,11 +30,11 @@ Public Sub CreateEmail()
                                     BodyContent:= "This is a Body line", _
                                     SendTo:= "abc@gmail.com; user1@hotmail.com")
 End Sub
-'''
+```
 
 - Within procedure/function
 
-'''
+```
 Public Sub CreateEmail()
 Dim clsEmail As New clsEmailer
 
@@ -44,4 +44,4 @@ Dim clsEmail As New clsEmailer
     
 Set clsEmail = Nothing
 End Sub
-'''
+```
