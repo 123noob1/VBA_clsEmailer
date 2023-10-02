@@ -6,8 +6,8 @@ A simple manageable, maintainable, and updateable emailer class that can be used
 - Call the object's function <code>InitEmailContent</code> and set the parameters accordingly to generate the email.
 
 ```
-    InitEmailContent(SubjectContent , BodyContent , _
-                    [AttachFile], [SendTo], [SendCC], [SendBCC], _
+    InitEmailContent(SubjectContent , BodyContent , 
+                    [AttachFile], [SendTo], [SendCC], [SendBCC], 
                     [BodyFormat], [DisplayMail], [SendOnBehalf], [FlagImportance])
 ```
 
