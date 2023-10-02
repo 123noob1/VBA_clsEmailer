@@ -22,26 +22,26 @@ A simple manageable, maintainable, and updateable emailer class that can be used
 - Class/Form level
 
 ```
-Option Explicit
-Private clsEmail as New clasEmailer
+    Option Explicit
+    Private clsEmail as New clasEmailer
 
-Public Sub CreateEmail()
-    Call clsEmail.InitEmailContent(SubjectContent:= "This is a Subject line", _
+    Public Sub CreateEmail()
+        Call clsEmail.InitEmailContent(SubjectContent:= "This is a Subject line", _
                                     BodyContent:= "This is a Body line", _
                                     SendTo:= "abc@gmail.com; user1@hotmail.com")
-End Sub
+    End Sub
 ```
 
 - Within procedure/function
 
 ```
-Public Sub CreateEmail()
-Dim clsEmail As New clsEmailer
+    Public Sub CreateEmail()
+    Dim clsEmail As New clsEmailer
 
     Call clsEmail.InitEmailContent(SubjectContent:= "This is a Subject line", _
                                     BodyContent:= "This is a Body line", _
                                     SendTo:= "abc@gmail.com; user1@hotmail.com")
     
-Set clsEmail = Nothing
-End Sub
+    Set clsEmail = Nothing
+    End Sub
 ```
