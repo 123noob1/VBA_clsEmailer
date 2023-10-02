@@ -5,7 +5,7 @@ A simple manageable, maintainable, and updateable emailer class that can be used
 - Dim the class clsEmailer either on class/form level or procedure level.
 - Call the object's function <code>InitEmailContent</code> and set the parameters accordingly to generate the email.
 
-```InitEmailContent(SubjectContent , BodyContent , [AttachFile], [SendTo], [SendCC], [SendBCC], [BodyFormat], [DisplayMail], [SendOnBehalf], [FlagImportance])```
+```    InitEmailContent(SubjectContent , BodyContent , [AttachFile], [SendTo], [SendCC], [SendBCC], [BodyFormat], [DisplayMail], [SendOnBehalf], [FlagImportance])```
 
 - <code>SubjectContent</code> - [str] Email Subject line (required)
 - <code>BodyContent</code> - [str] Email Body content (required)
